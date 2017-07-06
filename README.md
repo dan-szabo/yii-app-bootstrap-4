@@ -8,7 +8,7 @@ Project can be installed and initialized similarly to the [Yii Advanced Template
 
 Installing using Composer
 ~~~
-composer create-project dan-szabo/yii-app-bootstrap-4 folder_name
+composer create-project -s dev dan-szabo/yii-app-bootstrap-4 folder_name
 ~~~
 
 For preparing the application, [please follow this guide](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md#preparing-application). **You only need step 2. and 3.** (In step 2. update
