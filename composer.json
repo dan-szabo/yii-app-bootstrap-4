@@ -1,0 +1,61 @@
+{
+    "name": "dan-szabo/yii-app-bootstrap-4",
+    "description": "Yii 2 Basic Application Template + database-based user functionality from the Advanced Template. Based on Bootstrap 4. 'components' and 'messages' folders have also been added.",
+    "keywords": ["yii2", "framework", "basic", "bootstrap 4", "project template", "user"],
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/dan-szabo/yii-app-bootstrap-4"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.12",
+        "yiisoft/yii2-bootstrap": "~2.1.0@dev",
+        "yiisoft/yii2-swiftmailer": "*",
+        "codemix/yii2-localeurls": "^1.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1",
+        "codeception/specify": "~0.4.3"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset":{
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "runtime": "0777",
+                    "web/assets": "0777",
+                    "yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "config/web.php"
+            ]
+        }
+    }
+}
