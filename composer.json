@@ -13,7 +13,7 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.1.0@dev",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "codemix/yii2-localeurls": "^1.5.0"
+        "codemix/yii2-localeurls": "^1.7.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
