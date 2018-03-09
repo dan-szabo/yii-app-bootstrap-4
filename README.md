@@ -1,6 +1,6 @@
 yii-app-bootstrap-4
 ===========
-yii-app-bootstrap-4 is a mixture of the Yii 2 Basic and Advanced templates with no backend / frontend separation, but with the database-based user functionality from the advanced template. The other important note is that it is using Bootsrap 4 instead of Boostrap 3. Some additional folders ('components', 'messages') have also been added.
+yii-app-bootstrap-4 is a mixture of Yii 2 Basic and Advanced templates with no backend / frontend separation, but with the database-based user functionality from the advanced template. The other important note is that it is using Bootsrap 4 instead of Boostrap 3. Some additional folders ('components', 'messages') are also added.
 
 INSTALLATION
 ------------
